@@ -1,63 +1,90 @@
+<``html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bazie Boutique</title>
 <style>
-body{font-family:Arial;margin:0;background:#f5f5f5}
-header{background:#111;color:white;text-align:center;padding:20px}
-h1{margin:0}
-.container{padding:15px}
-.card{background:white;border-radius:12px;padding:15px;margin:15px 0;text-align:center;box-shadow:0 2px 8px #ccc}
-.price{font-size:22px;font-weight:bold;color:#e60000}
-button{background:#25D366;color:white;border:0;padding:12px 20px;border-radius:8px;font-size:16px}
+body{font-family:Arial,sans-serif;margin:0;background:#f5f5f5;color:#222}
+header{background:#111;color:#fff;text-align:center;padding:24px 12px}
+header h1{margin:0 0 8px;font-size:28px}
+header p{margin:0}
+.container{max-width:1100px;margin:auto;padding:20px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 3px 12px #0002}
+.photo{height:260px;background:#e8e8e8;display:flex;align-items:center;justify-content:center;color:#777;font-weight:bold}
+.photo img{width:100%;height:100%;object-fit:cover}
+.info{padding:15px}
+.price{font-size:20px;font-weight:bold;margin:8px 0 14px}
+.btn{display:block;text-align:center;background:#25D366;color:white;text-decoration:none;padding:12px;border-radius:8px;font-weight:bold}
+footer{text-align:center;padding:25px;color:#555}
 </style>
 </head>
-
 <body>
 <header>
 <h1>BAZIE BOUTIQUE</h1>
-<p>Mode & vêtements</p>
+<p>Nos vêtements • Commande par WhatsApp</p>
 </header>
 
 <div class="container">
+<div class="products">
 
 <div class="card">
-<h2>Ensemble rouge</h2>
-<p>Ensemble complet</p>
-<p class="price">17 500 F CFA</p>
-<button>Commander sur WhatsApp</button>
-</div>
-
-<div class="card">
-<h2>Ensemble rose</h2>
-<p>Ensemble complet</p>
-<p class="price">27 500 F CFA</p>
-<button>Commander sur WhatsApp</button>
+<div class="photo"><img src="photos/vetement1.jpg" alt="Vêtement 1"></div>
+<div class="info"><h2>Vêtement 1</h2><div class="price">17 500 F CFA</div>
+<a class="btn" href="https://wa.me/22677726088?text=Bonjour%20je%20veux%20commander%20le%20Vêtement%201%20à%2017%20500%20F%20CFA">Commander sur WhatsApp</a></div>
 </div>
 
 <div class="card">
-<h2>Ensemble blanc & noir</h2>
-<p>Ensemble complet</p>
-<p class="price">17 500 F CFA</p>
-<button>Commander sur WhatsApp</button>
+<div class="photo"><img src="photos/vetement2.jpg" alt="Vêtement 2"></div>
+<div class="info"><h2>Vêtement 2</h2><div class="price">27 500 F CFA</div>
+<a class="btn" href="https://wa.me/22677726088?text=Bonjour%20je%20veux%20commander%20le%20Vêtement%202%20à%2027%20500%20F%20CFA">Commander sur WhatsApp</a></div>
 </div>
 
 <div class="card">
-<h2>Ensemble rouge & noir</h2>
-<p>Ensemble complet</p>
-<p class="price">17 500 F CFA</p>
-<button>Commander sur WhatsApp</button>
+<div class="photo"><img src="photos/vetement3.jpg" alt="Vêtement 3"></div>
+<div class="info"><h2>Vêtement 3</h2><div class="price">17 500 F CFA</div>
+<a class="btn" href="https://wa.me/22677726088?text=Bonjour%20je%20veux%20commander%20le%20Vêtement%203%20à%2017%20500%20F%20CFA">Commander sur WhatsApp</a></div>
 </div>
 
 <div class="card">
-<h2>Ensemble blanc</h2>
-<p>Ensemble complet</p>
-<p class="price">17 500 F CFA</p>
-<button>Commander sur WhatsApp</button>
+<div class="photo"><img src="photos/vetement4.jpg" alt="Vêtement 4"></div>
+<div class="info"><h2>Vêtement 4</h2><div class="price">17 500 F CFA</div>
+<a class="btn" href="https://wa.me/22677726088?text=Bonjour%20je%20veux%20commander%20le%20Vêtement%204%20à%2017%20500%20F%20CFA">Commander sur WhatsApp</a></div>
+</div>
+
+<div class="card">
+<div class="photo"><img src="photos/vetement5.jpg" alt="Vêtement 5"></div>
+<div class="info"><h2>Vêtement 5</h2><div class="price">17 500 F CFA</div>
+<a class="btn" href="https://wa.me/22677726088?text=Bonjour%20je%20veux%20commander%20le%20Vêtement%205%20à%2017%20500%20F%20CFA">Commander sur WhatsApp</a></div>
+</div>
+
+<div class="card">
+<div class="photo"><img src="photos/lunettes-ski.jpg" alt="Lunettes de ski"></div>
+<div class="info"><h2>Lunettes de ski</h2><div class="price">2 000 F CFA</div>
+<a class="btn" href="https://wa.me/22677726088?text=Bonjour%20je%20veux%20commander%20les%20Lunettes%20de%20ski%20à%202%20000%20F%20CFA">Commander sur WhatsApp</a></div>
+</div>
+
+<div class="card">
+<div class="photo"><img src="photos/chaussure1.jpg" alt="Chaussures 1"></div>
+<div class="info"><h2>Chaussures 1</h2><div class="price">4 000 F CFA</div>
+<a class="btn" href="https://wa.me/22677726088?text=Bonjour%20je%20veux%20commander%20les%20Chaussures%201%20à%204%20000%20F%20CFA">Commander sur WhatsApp</a></div>
+</div>
+
+<div class="card">
+<div class="photo"><img src="photos/chaussure2.jpg" alt="Chaussures 2"></div>
+<div class="info"><h2>Chaussures 2</h2><div class="price">5 000 F CFA</div>
+<a class="btn" href="https://wa.me/22677726088?text=Bonjour%20je%20veux%20commander%20les%20Chaussures%202%20à%205%20000%20F%20CFA">Commander sur WhatsApp</a></div>
 </div>
 
 </div>
+</div>
+
+<footer>
+<p>📞 WhatsApp : <strong>77 72 60 88</strong></p>
+<p>© Bazie Boutique</p>
+</footer>
 </body>
 </html>
+```
