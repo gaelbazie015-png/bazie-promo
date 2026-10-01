@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bazie Promo</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;display:flex;min-height:100vh;align-items:center;justify-content:center}
+  .card{width:min(92%,420px);background:white;border-radius:22px;padding:28px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+  .logo{font-size:42px}
+  h1{margin:8px 0;color:#111}
+  .amount{font-size:42px;font-weight:800;margin:20px 0}
+  p{color:#555;line-height:1.5}
+  button{width:100%;border:0;border-radius:14px;padding:15px;font-size:17px;font-weight:700;cursor:pointer}
+  .primary{background:#111;color:white}
+  .note{font-size:12px;margin-top:18px;color:#777}
+  #message{display:none;margin-top:18px;padding:12px;border-radius:12px;background:#eef6ff;color:#174a7e}
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo">🎁</div>
+    <h1>BAZIE PROMO</h1>
+    <p>Une démonstration de page promotionnelle créée sur Android.</p>
+    <div class="amount">12 000 F CFA</div>
+    <p>Cette offre est fictive. Aucun PIN, code SMS ou information bancaire ne vous sera demandé.</p>
+    <button class="primary" onclick="participer()">Participer</button>
+    <div id="message">✅ Merci ! Ceci est une démonstration.</div>
+    <div class="note">Page de démonstration — Bazie Promo</div>
+  </main>
+
+<script>
+function participer(){
+  document.getElementById('message').style.display='block';
+}
+</script>
+</body>
+</html>
